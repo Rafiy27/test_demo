@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Score section initially hidden -->
+        <div class="score hide">
+            <p>Score: <span id="right-answers">0</span></p>
+        </div>
+        <div id="question-container" class="hide">
+            <div id="question" class="question">Question text</div>
+            <div id="answer-buttons" class="btn-grid">
+                <!-- Buttons will be dynamically generated -->
+            </div>
+        </div>
+        <div class="controls">
+            <button id="start-btn" class="start-btn btn">Start</button>
+            <button id="next-btn" class="next-btn btn hide">Next</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
